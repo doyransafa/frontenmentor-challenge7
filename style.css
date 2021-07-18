@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, p {
+    font-family: "Poppins", sans-serif;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 1.5;
+}
+
+.title-bold {
+    font-weight: 600;
+}
+
+.title-P {
+    font-size: 15px;
+    font-weight: 200;
+    margin-top: 10px;
+}
+
+.card-title {
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.card-P {
+    font-size: 13px;
+    font-weight: 200;
+    margin-top: 10px;
+}
+
+body {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(234, 12%, 34%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.cards {
+    background-color: white;
+    height: 250px;
+    width: 350px;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 1px 9px 19px 0px rgba(76,78,97,0.45);
+    -webkit-box-shadow: 1px 9px 19px 0px rgba(76,78,97,0.45);
+    -moz-box-shadow: 1px 9px 19px 0px rgba(76,78,97,0.45);
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    height: 70px;
+    margin-top: 45px;
+    align-self: flex-end;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.double-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}    
+
+.main-container {
+    max-width: 350px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 90px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.text-container {
+    text-align: center;
+}
+
+
+.card1 {
+    border-top: 3px solid hsl(180, 62%, 55%);
+}
+
+.card2 {
+    border-top: 3px solid hsl(0, 78%, 62%);
+}
+
+.card3 {
+    border-top: 3px solid hsl(34, 97%, 64%);
+}
+
+.card4 {
+    border-top: 3px solid hsl(212, 86%, 64%);
+}
+
+@media (min-width: 768px) {
+
+    .main-container {
+        max-width: 1200px;
+    }
+
+    .cards-container {
+        flex-direction: row;
+    }
+
+    .title {
+        font-size: 32px;
+        font-weight: 200;
+        line-height: 1.5;
+    }
+    
+    .title-bold {
+        font-weight: 600;
+    }
+    
+    .title-P {
+        font-size: 15px;
+        font-weight: 200;
+        width: 45%;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    
+}
